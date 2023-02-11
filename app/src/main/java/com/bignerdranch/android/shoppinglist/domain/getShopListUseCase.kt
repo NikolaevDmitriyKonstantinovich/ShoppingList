@@ -1,0 +1,10 @@
+package com.bignerdranch.android.shoppinglist.domain
+
+import androidx.lifecycle.LiveData
+
+class getShopListUseCase( private val shopListRepository: ShopListRepository ) {
+
+    fun getShopList(): LiveData<List<ShopItem>> {
+        return shopListRepository.getShopList()
+    }
+}
